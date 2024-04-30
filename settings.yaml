@@ -1,0 +1,52 @@
+DOM_MESH:
+  nelx: 40
+  nely: 20
+
+DOM_BBOX:
+  x_min: 0.
+  x_max: 40
+  y_min: 0.
+  y_max: 20
+
+MATERIAL:
+  youngs_modulus: 1.
+  poissons_ratio: 0.3
+
+VORONOI_OPT:
+  cells_per_elem: [2, 2]
+  min_seperation: 0.1
+  aniso_min: 1.
+  aniso_max: 3.5
+  thick_min: 0.4
+  thick_max: 3.
+  orient_min: 0.01
+  orient_max: 6.28
+
+VORONOI_DATA:
+  cells_per_elem: [2, 2]
+  min_seperation: 0.1
+  aniso_min: 1.
+  aniso_max: 3.5
+  thick_min: 0.3
+  thick_max: 3.
+  orient_min: 0.0
+  orient_max: 6.28
+  
+NEURAL_NETWORK:
+  num_layers: 4
+  neurons_per_layer: 50
+
+NN_TRAINING:
+  batch_size: 64
+  num_epochs: 300
+  lr: 5.e-5
+
+PENALTY_LOSS:
+  alpha_0: 0.2
+  del_alpha: 0.2
+
+TOPOPT:
+  filt_radius: 2.
+  lr: 1.e-1
+  num_epochs: 300
+  vol_frac: 0.5
